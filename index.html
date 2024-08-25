@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بهيس للزي الشرعي</title>
+    <style>
+    
+    
+    .button {
+    
+    margin:10px;
+    display:inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Cairo, sans-serif;
+    text-align: center;
+    color: #fff;
+   
+    background-color: DodgerBlue; /* لون بني دافئ يتباين مع الخلفية */
+    border:white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.6s infinite; /* تأثير النبض مستمر */
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button.clicked {
+    animation: none; /* إيقاف النبض عند الضغط */
+    background-color: #4e342e; /* تغيير اللون بعد الضغط */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        body {
+         text-direction : rtl ;
+           
+           font-family:  Noto Sans Arabic , sans-serif;
+          
+           
+            margin: 0;
+            padding: 0;
+            background-color: #f7f3f0;
+            color: #5a3e36;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #f2e1d9, #e8c8c8);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+        header h1 {
+            margin: 4;
+            padding-top: 0px;
+            padding-left: 0px;
+            margin: 10px;
+            font-size: 2em;
+            font-weight: bold;
+            position: relative;
+            text-align: right;
+            z-index: 100;
+            color: #8c5c50;
+        }
+        .ggg {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 70px;
+            height: 70px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 3;
+        }
+        .marquee {
+            width: 100%;
+            background-color: #d9b8ae;
+            color: #5a3e36;
+            padding: 10px 0;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            border-bottom: 2px solid #e8c8c8;
+            font-size: 1.2em;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e8c8c8;
+            padding: 15px;
+            animation: slideDown 1s;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #5a3e36;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover, nav a:focus {
+            color: #8c5c50;
+            transform: scale(1.1);
+            animation: bounce 0.5s;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s;
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #8c5c50;
+            font-weight: bold;
+        }
+        .section-content {
+        
+        text-align :right ;
+        padding:10px;
+        background-color:rgba(50,0 , 0,0.1);
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            line-height: 1.5;
+            color: #5a3e36;
+      
+            border-style: none solid none none;
+          
+           border-width: 8px;
+            border-radius:5px;
+        }
+
+        footer {
+        background-color:rgba(50,0 , 0,0.1);
+        border:solid;
+            background-color: #d9b8ae;
+            padding: 20px;
+            text-align: center;
+            color: #5a3e36;
+            font-size: 1.2em;
+        }
+        .contact-info {
+      
+      display:inline-block;
+             
+             background-size:auto;
+             border-radius:10px;
+             color: #5a3e36;
+             font-size:medium;
+             padding-left:1px;
+             padding-right:10px;
+             margin:0;
+           
+        }
+        .social-icons a {
+        
+            margin: 0 10px;
+            text-decoration: none;
+            color: #5a3e36;
+            font-size: 1.5em;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fadeInUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        @keyframes slideDown {
+            from {transform: translateY(-100%);}
+            to {transform: translateY(0);}
+        }
+
+        .social-media-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-button {
+  
+        
+        
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-button:hover {
+            background-color: #f5f5f5;
+            
+            
+            
+            
+            
+            
+        }
+
+        .facebook {
+            color: #3b5998;
+        }
+
+        .whatsapp {
+            color: #25D366;
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            background: #fff;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color:#FFE7DF;
+            color:black;
+            border: none;
+            border-radius:10px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 5;
+            font-size: 12px;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        .indicators {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .indicator {
+            display: inline-block;
+            width: 20px;
+            height:10px; 
+            background-color:#FFE7DF;
+            border-radius: 20%;
+            margin: 5px;
+            padding:0px;
+            cursor: pointer;
+        }
+
+        .indicator.active {
+            background-color: #5A3E36;
+        }
+        
+        
+        
+        
+        
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="B/Logoo.png" alt="" class="ggg">
+    </div>
+    <h1>بهيس للزي الشرعي</h1>
+</header>
+
+<div class="marquee">
+    <span> 
+     ✨  "متجر بهيس للزي الشرعي " أناقة و إتباع  🎀
+      </span>
+</div>
+
+<nav>
+    <a href="#abayas1">العبايات</a>
+    <a href="#abayas2">النقابات</a>
+    <a href="#abayas3">الإدناءات</a>
+    <a href="#abayas4">الطرح</a>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">مرحبا بكم في بهيس للزي الشرعي</h2>
+    
+    <p class="section-content">
+      
+      في "بهيس للزي الشرعي"، نجمع بين الأناقة والتقوى، لتقديم زي شرعي يجمع بين الجودة العالية والتصاميم العصرية التي تلائم احتياجات المرأة المسلمة. كل قطعة تُصنع بعناية وحب لتناسب ذوقكوتُكمل إطلالتك. بفضل التفاني في كل خيط وأدق تفاصيل التصميم، نقدم لكِ تجربة فريدة تعكس هويتكِ بأناقة راقية وراحة لا مثيل لها.
+    
+ </p>
+</section>
+
+<!-- قسم العبايات الأول -->
+<section id="abayas1">
+    <h2 class="section-title"> العبايات </h2>
+    <p class="section-content">مجموعة متنوعة من العبايات الأنيقة والراقية</p>
+    <section class="slider" data-slider-id="1">
+        <button class="arrow left" onclick="prevSlide(1)">&#10094;</button>
+        <div class="slides">
+            <div class="slide">
+                <img src="B/1.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="B/11.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="B/8.png" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="B/4.png" alt="Image 4">
+            </div>  
+        </div>
+        <button class="arrow right" onclick="nextSlide(1)">&#10095;</button>
+        <div class="indicators">
+            <span class="indicator" onclick="setSlide(0, 1)"></span>
+            <span class="indicator" onclick="setSlide(1, 1)"></span>
+            <span class="indicator" onclick="setSlide(2, 1)"></span>
+            <span class="indicator" onclick="setSlide(3, 1)"></span>
+        </div>
+        
+       <a href="https://api.whatsapp.com/send?phone=249117895503" class="button" id="requestButton">اطلب الآن</a>
+  
+        
+        
+        
+        
+        
+        
+    </section>
+</section>
+
+<hr>
+
+
+<!-- قسم النقابات الثاني -->
+<section id="abayas2">
+    <h2 class="section-title">  النقابات </h2>
+    <p class="section-content"> تشكيلة رائعة من النقابات بألوان وأشكال متعددة </p>
+    <section class="slider" data-slider-id="2">
+        <button class="arrow left" onclick="prevSlide(2)">&#10094;</button>
+        <div class="slides">
+            <div class="slide">
+         <img src="B/18.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="B/2.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="B/12.png" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="B/13.png" alt="Image 4">
+            </div>  
+        </div>
+        <button class="arrow right" onclick="nextSlide(2)">&#10095;</button>
+        <div class="indicators">
+            <span class="indicator" onclick="setSlide(0, 2)"></span>
+            <span class="indicator" onclick="setSlide(1, 2)"></span>
+            <span class="indicator" onclick="setSlide(2, 2)"></span>
+            <span class="indicator" onclick="setSlide(3, 2)"></span>
+        </div>
+        
+    <a href="https://api.whatsapp.com/send?phone=249117895503" class="button" id="requestButton">اطلب الآن</a>    
+        
+        
+        
+    </section>
+</section>
+
+<hr>
+
+<!-- قسم العبايات الثالث -->
+<section id="abayas3">
+    <h2 class="section-title">  الإدناءات </h2>
+    <p class="section-content"> إدناءات مريحة وعملية لجميع المناسبات </p>
+    <section class="slider" data-slider-id="3">
+        <button class="arrow left" onclick="prevSlide(3)">&#10094;</button>
+        <div class="slides">
+            <div class="slide">
+                <img src="B/14.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="B/7.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="B/15.png" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="B/3.png" alt="Image 4">
+            </div>  
+        </div>
+        <button class="arrow right" onclick="nextSlide(3)">&#10095;</button>
+        <div class="indicators">
+            <span class="indicator" onclick="setSlide(0, 3)"></span>
+            <span class="indicator" onclick="setSlide(1, 3)"></span>
+            <span class="indicator" onclick="setSlide(2, 3)"></span>
+            <span class="indicator" onclick="setSlide(3, 3)"></span>
+        </div>
+        
+        
+      <a href="https://api.whatsapp.com/send?phone=249117895503" class="button" id="requestButton">اطلب الآن</a>  
+        
+        
+        
+    </section>
+</section>
+
+<hr>
+
+<!-- قسم العبايات الرابع -->
+<section id="abayas4">
+    <h2 class="section-title">  الطرح </h2>
+    <p class="section-content"> مجموعة متنوعة من الطرح بخامات باردة </p>
+    <section class="slider" data-slider-id="4">
+        <button class="arrow left" onclick="prevSlide(4)">&#10094;</button>
+        <div class="slides">
+            <div class="slide">
+                <img src="B/10.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="B/13.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="B/17.png" alt="Image 3">
+            </div> 
+            
+            <div class="slide">
+                <img src="B/00.png" alt="Image 4">
+            </div>  
+            
+        </div>
+        <button class="arrow right" onclick="nextSlide(4)">&#10095;</button>
+        <div class="indicators">
+            <span class="indicator" onclick="setSlide(0, 4)"></span>
+            <span class="indicator" onclick="setSlide(1, 4)"></span>
+            <span class="indicator" onclick="setSlide(2, 4)"></span>
+            <span class="indicator" onclick="setSlide(3, 4)"></span>
+        </div>
+        
+        
+        <a href="https://api.whatsapp.com/send?phone=249117895503" class="button" id="requestButton">اطلب الآن</a>
+        
+    
+    </section>
+</section>
+
+<footer>
+    <pre class="contact-info" style="font-size : 20px ;" >
+      الموقع : بورتسودان
+    😉 خليكم على إتصال
+</pre>
+    
+   
+    <div class="social-media-links">
+        <button class="social-button facebook" onclick="window.location.href='https://www.facebook.com/profile.php?id=61551177403767&mibextid=ZbWKwL'">
+            <i class="fa fa-facebook"></i> Facebook
+        </button>
+        <button class="social-button whatsapp" onclick="window.location.href='https://api.whatsapp.com/send?phone=249117895503'">
+            <i class="fa fa-whatsapp"></i> WhatsApp
+        </button>
+    </div>
+</footer>
+
+<script>
+    let currentSlides = [0, 0, 0, 0]; // تتبع الشريحة الحالية لكل قسم
+
+    function showSlide(index, sliderId) {
+        const slider = document.querySelector(`[data-slider-id="${sliderId}"] .slides`);
+        const totalSlides = slider.children.length;
+        if (index >= totalSlides) currentSlides[sliderId - 1] = 0;
+        else if (index < 0) currentSlides[sliderId - 1] = totalSlides - 1;
+        else currentSlides[sliderId - 1] = index;
+        slider.style.transform = `translateX(-${currentSlides[sliderId - 1] * 100}%)`;
+        updateIndicators(sliderId);
+    }
+
+    function nextSlide(sliderId) {
+        showSlide(currentSlides[sliderId - 1] + 1, sliderId);
+    }
+
+    function prevSlide(sliderId) {
+        showSlide(currentSlides[sliderId - 1] - 1, sliderId);
+    }
+
+    function setSlide(index, sliderId) {
+        showSlide(index, sliderId);
+    }
+
+    function updateIndicators(sliderId) {
+        const indicators = document.querySelectorAll(`[data-slider-id="${sliderId}"] .indicator`);
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlides[sliderId - 1]);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        for (let i = 1; i <= 4; i++) {
+            showSlide(currentSlides[i - 1], i);
+        }
+    });
+    
+           document.getElementById( requestButton ).addEventListener( click , function() {
+            this.classList.add( clicked );
+        }); 
+    
+    
+    
+    
+    
+    
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet">
+
+
+
+
+
+</body>
+</html>
+
